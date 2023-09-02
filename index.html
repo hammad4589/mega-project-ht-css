@@ -13,7 +13,7 @@
     <h1 id="htext" >Hammad Hassan </h1>
     <P id="ptext" >Coding Wizard</P>
     <div class="button">
-        <a href="#"  > <span></span> contact me !</a>
+        <a href="#"  > <span></span> contact me ! </a>
         <a href="#"> <span></span> who i am ?</a>
     </div>
 </div>
@@ -21,14 +21,60 @@
 <div id="navbar">
     <nav>
         <ul>
-            <li><a href="#">HOME ?</a></li>
+            <li><a href="#">HOME </a></li>
             <li><a href="#">LOCATION</a></li>
             <li><a href="#">FACEBOOK</a></li>
             <li><a href="#">LINKEDIN</a></li>
             <li><a href="#">WHATSAPP</a></li>
         </ul>
     </nav>
+    <div  id="mb">
+        <img src="./images/menu button.png" alt="mb" id="menb" >
+    </div>
 </div>
+
+
+
+
+ <section  id="characterstics">
+    <div class="title">
+        <h4>CHARACTERSTICS</h4>
+          
+
+       
+
+    </div>
+ </section>
+
+
+
+
+ <h2> <em>why me !</em></h2>
+
+
+
+
+
+<script>
+    let mb =  document.getElementById("mb")
+    let navbar =  document.getElementById("navbar")
+    let menb =  document.getElementById("menb")
+    navbar.style.right== "-250px";
+
+    mb.onclick = function() {
+        if (navbar.style.right== "-250px"){
+            navbar.style.right = "0"
+            menb.src = "images/download.png"
+        }
+        else {
+            navbar.style.right = "-250px"
+            menb.src = "images/menu button.png"
+
+
+        }
+    }
+
+</script>
 
     
 </body>

@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    
 }
 #bcimage{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(4, 106, 207, 0.267)),  url(./images/photo-1487017159836-4e23ece2e4cf.avif);
@@ -31,54 +32,123 @@
 }
 .button > a {
     width: 140px;
+
+    height: auto;
     display: inline-block;
     text-decoration: none;
-    margin: 0px 10px;
-    padding: 10px 0px;
+    margin: 5px 20px;
+    padding: 10px 1px;
     border: white 1px solid;
-color: white;
-/* position: relative; */
-/* z-index: 1; */
-/* transition: 0.5s; */
+color: rgb(247, 243, 243);
+position: relative;
+transition: color 0.5s;
+
+}
+.button > a span{
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 10%;
+    
+background-color: rgb(255, 253, 253);
+    transition:  0.5s ;
+    position: absolute;
 
 
 }
-/* .button  a  span{ */
-    /* width: 0%; */
-    /* height: 100%; */
-    /* top: 0; */
-    /* left: 0; */
-/* background: rgb(250, 250, 250); */
-    /* transition: 0.5s; */
-    /* position: absolute; */
-    /* z-index: -1 */
+.button a:hover span {
+    width: 100%;
+}
+/* .button a:hover{ */
 
 
 /* } */
-/* .button > a:hover span { */
-    /* width: 100%; */
-    
-/* } */
+
+
 #navbar{
-    width: 150px;
+    width: 250px;
     height: 100vh;
     position: fixed;
-    top: 0%;
-    right: 0%;
-    background: rgb(79, 94, 109);
+    top: 0px;
+    right: -250px;
+    transition: 0.5s;
+    background: rgb(27, 33, 39);
     z-index: 2;
 }
 #navbar ul li {
     list-style: none;
-    margin: 90px 15px;
+    margin: 80px 25px;
     
 
 }
 #navbar ul li a {
     text-decoration: none;
     color: white;
+}
+#mb{
+    position: fixed;
+    text-align: center;
+    cursor: pointer;
+    top: 10px;
+    right: 2%;
 
 }
+#mb img{
+    width: 30px;
+    margin-top: 10px;
+}
+@media  screen and (max-width : 770px) {
+            .text h1 {
+                font-size: 2em;
+            }
+            .button > a{
+                display: block;
+                margin: 20px auto;
+            }
+        }
+
+        /* characterstics */
+
+        #characterstics{
+            width: 100%;
+            padding: 80px 0px;
+            
+        }
+        .title{
+            text-align: center;
+            padding-bottom: 60px;
+        }
+.title h4{
+    margin: 20px;
+    color: rgba(10, 15, 150, 0.885);
+    font-size: medium;
+    font-weight: bolder;
+
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        /* margin :0px -30px 0px -30px; */
+    }
+    
 
 
+}
+h2{
+    position: relative;
+}
+ em{
+    text-align: center;
+    content: "";
+    position: absolute;
+    animation-name: typing;
+    animation: typing 1.5s steps(10) infinte; 
+}
+    
+        
+ 
+  
+    
 
+ 
